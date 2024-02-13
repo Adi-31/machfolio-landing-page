@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { ImHangouts } from "react-icons/im";
+import { FaTelegram } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -35,7 +36,7 @@ const Footer = () => {
     <FaTwitter size={30} />
     <FaInstagram size={30} />
     <FaFacebook size={30} />
-    <ImHangouts size={30} />
+    <FaTelegram  size={30} />
     </div>
     <p className='flex justify-center mt-[10px] mb-[30px]'>© 2023 MachFolio. All rights reserved.</p>
     </div>
