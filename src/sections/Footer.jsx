@@ -3,7 +3,7 @@ import { GrCloudlinux } from "react-icons/gr";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { ImHangouts } from "react-icons/im";
+// import { ImHangouts } from "react-icons/im";
 import { FaTelegram } from "react-icons/fa";
 
 

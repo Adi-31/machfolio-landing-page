@@ -1,22 +1,20 @@
-import About from "./sections/About"
-import Features from "./sections/Features"
-import Footer from "./sections/Footer"
-import GetStarted from "./sections/GetStarted"
-import Hero from "./sections/Hero"
-import Pricing from "./sections/Pricing"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
+
 
 function App() {
-
   return (
-    <>
-     <Hero />
-     <About />
-     <Features />
-     <Pricing />
-     <GetStarted />
-     <Footer />
-    </>
-  )
+    <Router>
+      <>
+      <Routes>
+          <Route path="/" element={<Landing />} /> 
+          <Route path="/login" element={<Login />} /> 
+          {/* <Route path="*" element={<NotFound />} />   */}
+        </Routes>
+      </>
+    </Router>
+  );
 }
 
-export default App
+export default App;
