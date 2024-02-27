@@ -1,8 +1,9 @@
 import React from 'react'
 import { FaSun } from "react-icons/fa";
-import Walking from '../assets/Walking.png'
+import image from '../assets/Walking.png'
 
 const Login2 = () => {
+  console.log('Walking', typeof(Walking))
   return (
     <div className='bg-[#5465FF] text-white h-[600px] sm:h-screen md:h-screen w-full flex items-center flex-col gap-[0px]'>
       <div className='mt-[63px]'>
@@ -17,7 +18,7 @@ const Login2 = () => {
             UNLOCK THE WORLD WITH LIMITLESS LOGIN OPTIONS.
           </h1>
           <div>
-            <img src={Walking} height={10} width={520} />
+          <img src={image} alt="Walking" className='w-[400px] sm:w-[600px] md:w-[750px] h-[400px] sm:h-[600px] md:h-[750px] ml-[20px] sm:ml-[80px]' />
           </div>
         </div>
       </div>
