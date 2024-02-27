@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaSun } from "react-icons/fa";
+import Walking from '../assets/Walking.png'
 
 const Login2 = () => {
   return (
@@ -16,7 +17,7 @@ const Login2 = () => {
             UNLOCK THE WORLD WITH LIMITLESS LOGIN OPTIONS.
           </h1>
           <div>
-            <img src='src/assets/Walking.png' height={10} width={520} />
+            <img src={Walking} height={10} width={520} />
           </div>
         </div>
       </div>
