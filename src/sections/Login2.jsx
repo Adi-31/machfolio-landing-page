@@ -25,7 +25,7 @@ const Login2 = () => {
             UNLOCK THE WORLD WITH LIMITLESS LOGIN OPTIONS.
           </h1>
           <div>
-          <img src={image} alt="Walking" className='w-[400px] sm:w-[600px] md:w-[750px] h-[400px] sm:h-[600px] md:h-[750px] ml-[20px] sm:ml-[80px]' />
+          <img src={image} alt="Walking" className='w-[400px] sm:w-[500px] md:w-[600px] h-[300px] sm:h-[600px] md:h-[750px] ml-[20px] sm:ml-[80px]' />
           </div>
         </div>
       </div>
