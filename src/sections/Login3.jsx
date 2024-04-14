@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react';
+
 import { gapi } from 'gapi-script';
-import LoginButton from './LoginButton';
+import LoginButton from './LoginButton';  
+
+// const useCustomNavigation = () => {
+//   const navigate = useNavigate();
+
+//   const redirectToDashboard = () => {
+//     navigate('/dashb');
+//   };
+
+//   return {
+//     redirectToDashboard,
+//     // Other navigation functions
+//   };
+// };
 
 const clientId = "882103023815-pm25g92hsnikblo2a04n368341gl09n5.apps.googleusercontent.com";
 
 const Login3 = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const history = useHistory(); // Initialize useHistory
+  // const { redirectToDashboard } = useCustomNavigation();
 
   useEffect(() => {
     function start() {
@@ -13,7 +29,6 @@ const Login3 = () => {
         clientId: clientId,
         scope: ""
       }).then(() => {
-        // Check if the user is already signed in
         const isUserSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
         setIsLoggedIn(isUserSignedIn);
       });
@@ -24,13 +39,14 @@ const Login3 = () => {
 
   const handleLoginSuccess = (user) => {
     setIsLoggedIn(true);
-    // Handle successful login here, e.g., store user data in state or local storage
+    // Redirect to "/dashb" after successful login
+    // redirectToDashboard();
     console.log("User logged in:", user);
   };
 
   const handleLogoutSuccess = () => {
     setIsLoggedIn(false);
-    // Handle successful logout here, e.g., clear user data from state or local storage
+    //logout data to be saved
     console.log("User logged out");
   };
 

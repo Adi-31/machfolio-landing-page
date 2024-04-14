@@ -11,14 +11,26 @@ function Landing() {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    // Check if the URL contains the hash
+    const hash = window.location.hash;
+    if (hash) {
+      // Scroll to the element with the corresponding ID
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   return (
     <>
      <Hero />
      <About />
-     <Features />
-     <Pricing />
+     <section id="features"><Features /></section>
+     <section id="pricing"><Pricing /></section>
      <GetStarted />
-     <Footer />
+     <section id="footer"><Footer /></section>
     </>
   )
 }
